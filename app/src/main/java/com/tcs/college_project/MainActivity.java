@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btnConfirmAll.setOnClickListener(v -> {
             for (Item item : items) {
                 if (item.getCount() > 0) {  // Store only selected items
-                    dbHelper.insertOrder(item.getName(), item.getEmail(), item.getImage(), item.getCount());
+                    dbHelper.insertOrder(item.getName(), item.getCategory(), item.getImage(), item.getCount());
                 }
             }
             Toast.makeText(MainActivity.this, "Order Confirmed!", Toast.LENGTH_SHORT).show();

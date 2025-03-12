@@ -31,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         Item item = items.get(position);
 
         holder.nameView.setText(item.getName());
-        holder.emailView.setText(item.getEmail());
+        holder.CategoryView.setText(item.getCategory());
         holder.imageView.setImageResource(item.getImage());
         holder.itemCount.setText(String.valueOf(item.getCount()));
 

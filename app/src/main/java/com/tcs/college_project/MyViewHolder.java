@@ -15,14 +15,14 @@ import java.text.BreakIterator;
 
 public class MyViewHolder extends RecyclerView.ViewHolder {
     ImageView imageView;
-    TextView nameView, emailView, itemCount;
+    TextView nameView, CategoryView, itemCount;
     Button btnPlus, btnMinus,btnConfirm;  // ✅ Added buttons
 
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.imageview);
         nameView = itemView.findViewById(R.id.name);
-        emailView = itemView.findViewById(R.id.email);
+        CategoryView = itemView.findViewById(R.id.email);
         itemCount = itemView.findViewById(R.id.item_count);  // ✅ Count TextView
         btnPlus = itemView.findViewById(R.id.btn_increase);      // ✅ + Button
         btnMinus = itemView.findViewById(R.id.btn_decrease);    // ✅ - Button
